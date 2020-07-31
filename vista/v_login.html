@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilologin.css"/>
+</head>
+<body>
+<div id="general">
+
+	<form  id="form1" name="form1" method="post" action="">
+	<H2> Bienvenido al Sistema de Control de Datos Personales</H2>
+		<label for="cedula"> Cedula de Usuario:</label>
+		<input type="text" id="cedula" pattern="^([VE]{1})([0-9]{7,12})$" placeholder="V1234567 o E1234567" maxlength="12" required>
+		<label for="usuario"> Usuario:</label>
+		<input type="text" id="user" pattern="[A-Za-z0-9]" placeholder="Escriba Usuario" maxlength="30" required>
+		<label for="contrasena"> Contraseña:</label>
+		<input type="password" id="pass"  placeholder="Escriba Contraseña" maxlength="30" required>
+		<input type="submit" name="ingresar" value="Ingresar" id="boton"><br>
+		<a href="" > Olvido Contraseña </a>
+</div>
+</body>
+</html>
